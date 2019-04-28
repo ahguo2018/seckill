@@ -4,20 +4,20 @@ import java.util.Date;
 
 /**
  * @date 2019/3/26 20:29
- *
+ * 秒杀活动实体类
  */
 public class Seckill {
-
+    /*秒杀活动Id*/
     private long seckillId;
-
+    /*秒杀活动名称*/
     private String name;
-
+    /*库存*/
     private int number;
-
+    /*秒杀活动开启时间*/
     private Date startTime;
-
+    /*秒杀活动结束时间*/
     private Date endTime;
-
+    /*秒杀活动创建时间*/
     private Date createTime;
 
     public long getSeckillId() {
