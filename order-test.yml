@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: order
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/db_sell?autoReconnect=true&useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+    username: root
+    password: 1234
+  jpa:
+    show-sql: true
+server:
+  port: 8081
+env:
+  test2
+girl:
+  name: lili
+  age: 20
