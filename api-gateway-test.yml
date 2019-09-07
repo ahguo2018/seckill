@@ -12,7 +12,7 @@ zuul:
 #    product: /myproduct/**
   #排除某些路由
   ignored-patterns:
-    - /**/product/listForOrder
+    - /**/product/listForOrder1
 ribbon:  #设置ribbon的超时时间小于zuul的超时时间
   ReadTimeout: 10000
   ConnectTimeout: 10000
