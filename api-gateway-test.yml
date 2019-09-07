@@ -1,0 +1,18 @@
+zuul:
+  host:
+    connect-timeout-millis: 15000 #HTTP连接超时要比Hystrix的大
+    socket-timeout-millis: 60000 #socket超时
+  routes:
+  # /myproduct/product/list -> /product/product/list
+    aaaa:
+      path: /myproduct/**
+      serviceId: product
+      sensitiveHeaders:  #设置为空,不过滤Cookie
+    #简洁写法
+#    product: /myproduct/**
+  #排除某些路由
+  ignored-patterns:
+    - /**/product/listForOrder
+ribbon:  #设置ribbon的超时时间小于zuul的超时时间
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
