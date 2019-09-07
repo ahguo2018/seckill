@@ -5,7 +5,7 @@ zuul:
   routes:
   # /myproduct/product/list -> /product/product/list
     aaaa:
-      path: /myproduct/**
+      path: /myproduct1/**
       serviceId: product
       sensitiveHeaders:  #设置为空,不过滤Cookie
     #简洁写法
