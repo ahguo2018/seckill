@@ -1,4 +1,5 @@
 zuul:
+  sensitive-headers:
   host:
     connect-timeout-millis: 15000 #HTTP连接超时要比Hystrix的大
     socket-timeout-millis: 60000 #socket超时
